@@ -23,9 +23,7 @@ class Song
     song = Song.new(song_name)
     song.artist_name = artist_name
     song
-    
   end
-   
   
   def artist_name=(name)
     #if (self.artist.nil?)
@@ -36,8 +34,5 @@ class Song
     artist = Artist.find_or_create_by_name(name)
     self.artist = artist
     artist.add_song(self)
-    
   end 
-
-  
 end 
